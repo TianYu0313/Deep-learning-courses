@@ -34,8 +34,8 @@ class Residual_CBAM(nn.Module):
         X = self.conv3(X)
         Y += X
         # 查看特征图
-        plt.imshow(Y[0][0].cpu().detach().numpy())
-        plt.show()
+        # plt.imshow(Y[0][0].cpu().detach().numpy())
+        # plt.show()
         return F.relu(Y)
 
 
